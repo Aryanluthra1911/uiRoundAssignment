@@ -21,7 +21,6 @@ const EarningBlock = () => {
 
     return (
         <div className='h-[35vh] w-[90%] max-w-full rounded-2xl p-3 bg-[#0f1115] shadow-md border border-[#1f2937] hover:border-gray-600 flex flex-col overflow-hidden'>
-            {/* Header */}
             <div className="flex items-center justify-between mb-2 flex-shrink-0">
                 <h3 className="text-sm font-semibold text-gray-200">Earning Summary</h3>
                 <div className="flex items-center gap-1">
@@ -31,8 +30,6 @@ const EarningBlock = () => {
                     </svg>
                 </div>
             </div>
-            
-            {/* Legend */}
             <div className="flex items-center justify-end gap-2 mb-2 flex-shrink-0">
                 <div className="flex items-center gap-1">
                     <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
@@ -43,8 +40,6 @@ const EarningBlock = () => {
                     <span className="text-xs text-gray-400">Same period last year</span>
                 </div>
             </div>
-            
-            {/* Chart Container */}
             <div className="flex-1 min-h-0 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart 
@@ -67,8 +62,6 @@ const EarningBlock = () => {
                             tickCount={4}
                             width={35}
                         />
-                        
-                        {/* Current year line (blue) */}
                         <Line 
                             type="monotone" 
                             dataKey="currentYear" 
@@ -77,8 +70,6 @@ const EarningBlock = () => {
                             dot={false}
                             activeDot={{ r: 3, fill: '#60A5FA' }}
                         />
-                        
-                        {/* Last year line (gray, dashed) */}
                         <Line 
                             type="monotone" 
                             dataKey="lastYear" 
