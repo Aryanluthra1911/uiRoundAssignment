@@ -11,7 +11,7 @@ const StaticBlock = () => {
             </div>
             <StatCard title={'Income'} amt={'9460.00'} compareamt={'9940'} previousamt={'25658.00'} percentage={-1.5}/>
             <StatCard title={'Expenses'} amt={'5660.00'} compareamt={'5240'} previousamt={'22658.00'} percentage={2.5}/>
-            <HireCancelCard hired={54} canceled={20} pending={26}/>
+            <HireCancelCard hired={52} canceled={22} pending={26}/>
         </div>
     )
 }

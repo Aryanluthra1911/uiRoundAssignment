@@ -1,7 +1,6 @@
 import React from 'react'
 import downward_arrow from '../assets/downward-arrow.svg'
 import upward_arrow from '../assets/upward-arrow.svg'
-import { compile } from 'tailwindcss'
 const StatCard = ({title,amt,compareamt,previousamt,percentage}) => {
     
     return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
 const EarningBlock = () => {
-    // Sample data based on the chart shown
     const data = [
         { month: 'May', currentYear: 250000, lastYear: 120000 },
         { month: 'Jun', currentYear: 250000, lastYear: 180000 },
